@@ -1,0 +1,53 @@
+
+#header {
+	text-align: center;
+	padding: 0px 0px 0px 85px;
+	font-size: 30px;
+	color: blue;
+	font-weight: bold;
+}
+
+
+
+#competition {
+	border: 1px solid black;
+	background: white;
+	width: 10%;
+	padding: 10px;
+	float: left;
+}
+
+#hack_price {
+	clear: both;
+	font-size: 30px;
+}
+
+body {
+    font-family: Arial;
+    font-size: 14px
+}
+
+html { 
+	background: url('http://www.washingtonpost.com/rf/image_606w/2010-2019/WashingtonPost/2011/09/11/Education/Images/graphingcalc.jpg') no-repeat center center fixed; 
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+
+
+#about_box {
+	font-size:25px;
+	background: white;
+	/*border: 1px solid black;*/
+	float: right;
+	width: 20%;
+	margin: 10px 30px 10px 30px;
+}
+
+#twit_logo {
+	margin: 10px;
+	width: 50px;
+	height:50px;
+}
