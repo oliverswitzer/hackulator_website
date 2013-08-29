@@ -1,3 +1,19 @@
+/*general text formatting of the web page*/
+body {
+    font-family: Tahoma, Geneva, sans-serif;
+    font-size: ;
+}
+
+/*creating the image background and keeping it fixed. I took this from online (found by joe)*/
+html { 
+	background: url('http://www.washingtonpost.com/rf/image_606w/2010-2019/WashingtonPost/2011/09/11/Education/Images/graphingcalc.jpg') no-repeat center center fixed; 
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+
 /* for navigation bar at the top, taken/modified from this website example
 http://d.alistapart.com/css-positioning-101/example_j.html*/
 #nav a {
@@ -54,13 +70,28 @@ http://d.alistapart.com/css-positioning-101/example_j.html*/
 	opacity:.75;
 	margin: 10px;
 	width: 50px;
-	height:50px;
-	border-radius: 20px
+	height: 50px;
+	border-radius: 10px
+}
+
+#email {
+	z-index: +1;  
+	position: fixed;   
+	height: 15px; 
+	top: 350px;
+	right: 75px;
+	border-radius: 10px;     
+}
+
+#email_logo {
+	opacity: .7; 
+	width: 100px;
+	height: 100px;
 }
 
 /*the main opaque white container that runs through the page */
 #container {
-	width: 900px;
+	width: 64%;
 	margin: 0 auto;    /*centers it*/
 	background:rgba(255,255,255, 0.65);
 	border-radius:10px;
@@ -80,7 +111,7 @@ http://d.alistapart.com/css-positioning-101/example_j.html*/
 /*fomratting the paragraph of text at the top of the container*/
 #miss_statement {    
 	position: relative;
-	color: #B85B28;
+	color: black;
 	font-size: 30px;
 	width:45%;
 	padding: 20px 260px 20px 45px;
@@ -99,9 +130,9 @@ span {
 	width: 400px;
 	height: 300px;
 	padding: 20px;
-	border-bottom: 3px solid #f95b34;
-	border-right: 3px solid #f95b34;
-	background: #fa8366;
+	border-bottom: 3px solid rgba(0,0,0, 0.3);
+	border-right: 3px solid rgba(0,0,0, 0.3);
+	background: rgba(254,120, 1, 0.75);
 	border-radius: 10px;
 	
 	/*font-size:25px;
@@ -115,32 +146,94 @@ span {
 
 /*for the div that contains TI, HP and CASIO calculator prices that are crossed out*/
 #competition {
-	text-decoration:line-through;
-	font-size: 40px;
+	line-height: 50%;
+	font-size: 250%;
+	color: #565656;
+}
+
+#hack_price {
 	color: white;
+	background: #4A79D9;
+	font-size: 250%;
+	padding: 20px;
+	border-radius: 10px;
+	border-bottom: 3px solid #565656;
+	border-right: 3px solid #565656;
 }
 
-/*#hack_price {
-	color: #79c454;
-	font-size: 60px;
-	margin: 200px 20px 30px 10px;
-}*/
+#ppp {
+	width: 85%;
+	/*border: 1px dashed black;*/
+	margin: 0 auto;
+}
+/*taken from http://css-tricks.com/examples/hrs/*/
+#separator {  
+	width: 100%;
+    border: 0;
+    height: 4px;
+  /*  background-image: -webkit-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0)); 
+    background-image:    -moz-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0)); 
+    background-image:     -ms-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0)); 
+    background-image:      -o-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0));*/ 
 
-/*general text formatting of the web page*/
-body {
-    font-family: Tahoma, Geneva, sans-serif;
-    font-size: 14px
+    background-image: -webkit-linear-gradient(left, rgba(31,99,171,0), rgba(31,99,171,0.75), rgba(31,99,171,0)); 
+    background-image:    -moz-linear-gradient(left, rgba(31,99,171,0), rgba(31,99,171,0.75), rgba(31,99,171,0)); 
+    background-image:     -ms-linear-gradient(left, rgba(31,99,171,0), rgba(31,99,171,0.75), rgba(31,99,171,0)); 
+    background-image:      -o-linear-gradient(left, rgba(31,99,171,0), rgba(31,99,171,0.75), rgba(31,99,171,0)); 
+
 }
 
-/*creating the image background and keeping it fixed. I took this from online (found by joe)*/
-html { 
-	background: url('http://www.washingtonpost.com/rf/image_606w/2010-2019/WashingtonPost/2011/09/11/Education/Images/graphingcalc.jpg') no-repeat center center fixed; 
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
-	background-size: cover;
+
+#update_header {
+	background-image: -webkit-linear-gradient(left, rgba(31,99,171,0.45), rgba(31,99,171,0.75), rgba(31,99,171,0.45)); 
+    background-image:    -moz-linear-gradient(left, rgba(31,99,171,0), rgba(31,99,171,0.75), rgba(31,99,171,0)); 
+    background-image:     -ms-linear-gradient(left, rgba(31,99,171,0), rgba(31,99,171,0.75), rgba(31,99,171,0)); 
+    background-image:      -o-linear-gradient(left, rgba(31,99,171,0), rgba(31,99,171,0.75), rgba(31,99,171,0)); 
+	
+	padding: 10px;
+	margin: auto;
+	text-align: center;
+	font-size: 100%;
+	font-weight: bold;
+	color: white;
+	/*background: rgba(31,99,171,.65); */
+	border-top: none;
+	border-bottom-left-radius: 10px;
+	border-bottom-right-radius: 10px;
+	width: 15%;
+}
+
+.ppp_item {
+	font-size: 15px;
+	color: black;
+	margin-top: 40px;
+	font-size: 15px;
+	border-radius: 10px;
+	border-bottom: 3px solid #565656;
+	border-right: 3px solid #565656;
+}
+
+.ppp_item > h1 {
+	text-align: center;
+}
+
+.ppp_item > ul li  {
+	font-size: 15px;
+	padding-right: 10px;
+	margin:1em 10% 1em 0;   
 }
 
 
+#progress {
+	background: rgba(130,173, 0, 0.75);
+}
+
+#plans {
+	background: rgba(90,167,221, 0.75);
+}
+
+#problems {
+	background: rgba(254,120, 1, 0.75);
+}
 
 
